@@ -1,13 +1,68 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  background-color: lightgrey;
+}
+
+.navbar > a {
+  text-decoration: none;
+}
+.song-container {
+  display: flex;
+  justify-content: space-around;
+  width: 50%;
+  margin: auto;
+  padding: 15px;
+  background-color: lightblue;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition-duration: 0.2s;
+}
+
+.song-container:hover {
+  opacity: 0.8;
+  background-color: rgb(168, 206, 238);
+}
+
+.details-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+.details-container>button {
+padding: 10px;
+border: none;
+background-color: orange;
+transition-duration: .2s;
+}
+.details-container>button:hover{
+background-color: rgb(190, 123, 0);
+}
+
+.song-details-container {
+  margin: auto;
+  width: 50%;
+  background-color: lightblue;
+  padding: 25px;
+  margin-top: 15px;
+}
+.song-details-container>p {
+  font-size: xx-large;
 }
